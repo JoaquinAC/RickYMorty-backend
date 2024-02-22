@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // Compila a ECMAScript 2017. Ajusta según tu entorno de Node.js
+    "module": "commonjs", // Usa el sistema de módulos CommonJS
+    "lib": ["es2017", "dom"], // Incluye las librerías necesarias
+    "outDir": "./dist", // Directorio de salida para los archivos compilados
+    "rootDir": "./src", // Directorio raíz que contiene los archivos TypeScript
+    "strict": true, // Habilita todas las opciones estrictas de tipo
+    "esModuleInterop": true, // Habilita la interoperabilidad de módulos ES6 con módulos CommonJS
+    "skipLibCheck": true, // Omite la verificación de tipos en las declaraciones de archivos .d.ts
+    "forceConsistentCasingInFileNames": true // Asegura que el uso de mayúsculas y minúsculas sea consistente en las importaciones
+  },
+  "include": ["src/**/*"], // Incluye todos los archivos dentro de la carpeta 'src'
+  "exclude": ["node_modules", "**/*.spec.ts"] // Excluye la carpeta 'node_modules' y archivos de pruebas
+}
